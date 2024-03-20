@@ -4,6 +4,7 @@ import { LuApple, LuSmartphone, LuCircleEllipsis, LuBaby, LuGamepad2, LuMonitorS
 import { RiHomeOfficeFill, RiRadioFill, RiTShirt2Line, RiComputerLine, RiArrowDownSLine, RiAccountCircleLine, RiShoppingCart2Line, RiMessage2Line } from "react-icons/ri";
 import { GiLipstick } from "react-icons/gi";
 import Link from "next/link";
+import React from "react";
 
 const Navbar = () => {
 
@@ -34,10 +35,10 @@ const Navbar = () => {
                 <Link href="/"><Image src="/Jumia-Logo-500x281.png" alt="page logo" width="150" height="150" /></Link>
             </Flex>
         </div>
-        <Flex gap="sm" className=""> 
-            <Input size="md" placeholder="Search products, brands and category" className="border border-black rounded-md" leftSection={<LuSearch />} />
+        <div className="flex flex-row gap-1"> 
+            <Input size="md" placeholder="Search products, brands and category" className="flex-grow border border-black rounded-md" leftSection={<LuSearch />} />
             <button className="text-white font-bold bg-orange-500 border border-orange-500 rounded-md p-2 shadow-lg">SEARCH</button>
-        </Flex>
+        </div>
         <Flex align="center" className="">
             <Menu width="200">
                 <Menu.Target>
