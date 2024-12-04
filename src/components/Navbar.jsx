@@ -160,7 +160,10 @@ const Navbar = () => {
           </Link>
         </Flex>
         <div className="mx-9">
-          <button className="text-white font-bold bg-orange-500 border border-orange-500 rounded-md p-2 shadow-lg">
+          <button
+            key={"book-now"}
+            className="text-white font-bold bg-orange-500 border border-orange-500 rounded-md p-2 shadow-lg"
+          >
             BOOK NOW
           </button>
         </div>
